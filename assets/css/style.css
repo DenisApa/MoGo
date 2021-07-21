@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap");
+.header {
+  height: 100vh;
+  min-height: 1000px;
+  background: url(../img/picture.jpg) center/cover no-repeat;
+}
+
+.header .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 70px;
+}
+
+.navigation a {
+  color: #fff;
+}
+
+.navigation .logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navigation .link {
+  padding: 5px;
+}
+
+.navigation .link:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.navigation .link__img {
+  -webkit-transition: -webkit-transform ease .5s;
+  transition: -webkit-transform ease .5s;
+  transition: transform ease .5s;
+  transition: transform ease .5s, -webkit-transform ease .5s;
+}
+
+.navigation .link__img:hover {
+  -webkit-transform: scale(115%);
+          transform: scale(115%);
+}
+
+.navigation .nav {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.navigation .nav__link {
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: color ease .5s, border-bottom ease .3s;
+  transition: color ease .5s, border-bottom ease .3s;
+}
+
+.navigation .nav__link:hover {
+  color: #fce38a;
+  border-bottom: 3px solid #fce38a;
+}
+
+.intro {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.intro__text {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+
+.intro__title {
+  text-align: center;
+  max-width: 860px;
+  text-transform: uppercase;
+  font-size: 150px;
+  line-height: 140px;
+  margin-bottom: 62.5px;
+  padding-bottom: 62.5px;
+  position: relative;
+}
+
+.intro__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 47%;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+}
+
+.intro__btn {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  padding: 15px 3em;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.intro__btn:hover {
+  background: #fff;
+  color: #fce38a;
+}
+
+.slider {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.slider__item {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: .7;
+  width: 100%;
+  max-width: calc((100% - 90px) / 4);
+  min-width: 140px;
+  padding: 25px 0;
+  border-top: 3px solid #fff;
+  position: relative;
+}
+
+.slider .active {
+  opacity: 1;
+}
+
+.slider .active:before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #f38181;
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+
+.slider__number {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.dflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-suptitle {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 30px;
+  padding-bottom: 35px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background: #f08b8b;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+}
+
+.about {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.about__text {
+  color: #999999;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 100px;
+}
+
+.about__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.about .item-card {
+  background: #95e1d3;
+  min-height: 250px;
+}
+
+.about .item-card__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 250px;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  position: relative;
+  -webkit-box-shadow: 0 0 #95e1d3;
+          box-shadow: 0 0 #95e1d3;
+}
+
+.about .item-card__link .dnone {
+  opacity: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+}
+
+.about .item-card__link .dnone:first-child {
+  margin-bottom: 10px;
+}
+
+.about .item-card__link .dnone.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+  background: linear-gradient(90deg, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+  z-index: 1;
+}
+
+.about .item-card__link:hover {
+  -webkit-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+  -webkit-box-shadow: 10px 10px #95e1d3;
+          box-shadow: 10px 10px #95e1d3;
+}
+
+.about .item-card__link:hover .dnone {
+  opacity: 1;
+}
+
+.about .item-card__link.one {
+  background: url(../img/item-card1.jpg);
+}
+
+.about .item-card__link.two {
+  background: url(../img/item-card2.jpg);
+}
+
+.about .item-card__link.three {
+  background: url(../img/item-card3.jpg);
+}

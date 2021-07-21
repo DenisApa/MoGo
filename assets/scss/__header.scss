@@ -1,0 +1,133 @@
+$color_1: #fff;
+$color_2: #fce38a;
+
+.header {
+	height: 100vh;
+	min-height: 1000px;
+	
+	background: url(../img/picture.jpg) center/cover no-repeat;
+	.container {
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	min-height: 70px;
+	a {
+	 color: $color_1;
+	}
+	.logo {
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.link {
+		padding: 5px;
+		&:not(:last-of-type) {
+			margin-right: 40px;
+		}
+		&__img {
+			transition: transform ease .5s;
+		}
+		&__img:hover {
+			transform: scale(115%);
+		}
+	}
+	.nav {
+		margin-left: auto;
+		margin-right: 40px;
+		&__link {
+			font-size: 14px;
+			text-transform: uppercase;
+			transition: color ease .5s, border-bottom ease .3s;
+		}
+		&__link:hover {
+			color: $color_2;
+			border-bottom: 3px solid $color_2;
+		}
+	}
+}
+
+.intro {
+	flex-direction: column;
+	align-items: center;
+	color: $color_1;
+	&__text {
+		font-family: 'Kaushan Script', cursive;
+		font-size: 72px;
+		margin-bottom: 25px;
+	}
+	&__title {
+		text-align: center;
+		max-width: 860px;
+		text-transform: uppercase;
+		font-size: 150px;
+		line-height: 140px;
+		margin-bottom: 62.5px;
+		padding-bottom: 62.5px;
+		position: relative;
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 47%;
+			bottom: 0;
+			width: 60px;
+			height: 3px;
+			background: $color_1;
+			
+		}
+	}
+	&__btn {
+		font-size: 14px;
+		color: $color_1;
+		font-weight: 700;
+		text-transform: uppercase;
+		border: 3px solid $color_1;
+		padding: 15px 3em;
+		transition: ease .5s;
+		&:hover {
+			background: $color_1;
+			color: $color_2;
+		}
+	}
+}
+
+.slider {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__item {
+		color: $color_1;
+		font-size: 18px;
+		text-transform: uppercase;
+		opacity: .7;
+		width: 100%;
+		max-width: calc((100% - 90px) / 4);
+		min-width: 140px;
+		padding: 25px 0;
+		border-top: 3px solid $color_1;
+		position: relative;
+	}
+	.active {
+		opacity: 1;
+		&:before {
+			content: "";
+			display: block;
+			width: 70px;
+			height: 3px;
+
+			background: #f38181;
+
+			position: absolute;
+			top: -3px;
+			left: 0;
+		}
+	}
+	&__number {
+		font-size: 24px;
+		font-weight: 700;
+	}
+}
