@@ -74,53 +74,87 @@ body {
 		column-gap: 30px;
 	}
 	.item-card {
-		background: #95e1d3;
-		min-height: 250px;
-		&__link {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 			
-			min-height: 250px;
+		min-height: 250px;
+		transition: ease .3s;
+		position: relative;
+		box-shadow: 0 0 #95e1d3;
+		
+		.dnone {
+			opacity: 0;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
 			transition: ease .3s;
-			position: relative;
-			box-shadow: 0 0 #95e1d3;
-			.dnone {
-				opacity: 0;
-				color: #fff;
-				font-size: 18px;
-				font-weight: 700;
-				text-transform: uppercase;
-				z-index: 2;
-				transition: ease .3s;
-				&:first-child {
-					margin-bottom: 10px;
-				}
-				&.bg {
-					position: absolute;
-					width: 100%;
-					height: 100%;
-					background: linear-gradient(90deg, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9));
-					z-index: 1;
-				}
+			z-index: 2;
+			&:first-child {
+				margin-bottom: 10px;
 			}
-			&:hover {
-				transform: translate(-10px, -10px);
-				box-shadow: 10px 10px #95e1d3;
-				.dnone {
-					opacity: 1;
-				}
-			}
-			&.one {
-				background: url(../img/item-card1.jpg);
-			}
-			&.two {
-				background: url(../img/item-card2.jpg);
-			}
-			&.three {
-				background: url(../img/item-card3.jpg);
+			&.bg {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(90deg, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9));
+				z-index: 1;
 			}
 		}
+		&:hover {
+			transform: translate(-10px, -10px);
+			box-shadow: 10px 10px #95e1d3;
+			.dnone {
+				opacity: 1;
+			}
+		}
+		&.one {
+			background: url(../img/item-card1.jpg);
+		}
+		&.two {
+			background: url(../img/item-card2.jpg);
+		}
+		&.three {
+			background: url(../img/item-card3.jpg);
+		}
 	}
+}
+
+.facts {
+	min-height: 270px;
+	background: #95e1d3;
+	margin-bottom: 100px;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(5, minmax(150px, 1fr));
+		grid-template-rows: minmax(270px, 1fr);
+		column-gap: 1px;
+	}
+	&__item {
+		color: $color_1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border-left: 2px solid #b5eae0;
+		padding: 10px;
+		&:last-child {
+			border-right: 2px solid #b5eae0;
+		}
+	}
+	&__number {
+		font-size: 72px;
+		font-weight: 700;
+	}
+	&__fact {
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+}
+
+.service {
+	text-align: center;
 }
