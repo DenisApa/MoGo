@@ -172,7 +172,7 @@
 }
 
 .navigation .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #f38181;
 }
 
 @media screen and (max-width: 768px) {
@@ -270,7 +270,7 @@
   text-transform: uppercase;
   width: 100%;
   max-width: calc((100% - 90px) / 4);
-  min-width: 140px;
+  min-width: 138px;
   padding: 25px 0;
   border-top: 3px solid #fff;
   opacity: .7;
@@ -312,9 +312,10 @@
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 450px) {
   .slider__item {
-    margin: 0 0.5vw;
+    margin: 0 1vw;
+    padding: 15px 0;
   }
 }
 
