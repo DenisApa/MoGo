@@ -302,23 +302,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .slider {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .slider__item {
-    margin: 0 8vw;
+    max-width: calc((100% - 45px) / 2);
+    padding: 10px 0;
   }
   .slider .active::before {
     width: 50px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .slider__item {
-    margin: 0 1vw;
-    padding: 10px 0;
   }
 }
 
