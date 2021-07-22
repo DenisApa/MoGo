@@ -270,6 +270,9 @@ $color_2: #fce38a;
 		&__item {
 			margin: 0 8vw;
 		}
+		.active::before {
+			width: 50px;
+		}
 	}
 }
 
@@ -277,7 +280,7 @@ $color_2: #fce38a;
 	.slider {
 		&__item {
 			margin: 0 1vw;
-			padding: 15px 0;
+			padding: 10px 0;
 		}
 	}
 }
