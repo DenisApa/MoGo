@@ -11,7 +11,7 @@
 
 <body>
 	<header class="header">
-		<div class="container dflex">
+		<div class="container">
 
 			<div class="navigation">
 				<a href="#" class="logo">MoGo</a>
@@ -22,64 +22,83 @@
 					<a href="#" class="nav__link link">Blog</a>
 					<a href="#" class="nav__link link">Contact</a>
 				</nav>
-				<a href="#" class="link"><img class="link__img" src="assets/img/CART.svg" alt=""></a>
+
+				<div class="hamburger-menu">
+					<input id="menu__toggle" type="checkbox" />
+					<label class="menu__btn" for="menu__toggle">
+						<span></span>
+					</label>
+
+					<ul class="menu__box">
+						<li><a class="menu__item" href="#">About</a></li>
+						<li><a class="menu__item" href="#">Service</a></li>
+						<li><a class="menu__item" href="#">Work</a></li>
+						<li><a class="menu__item" href="#">Blog</a></li>
+						<li><a class="menu__item" href="#">Contact</a></li>
+					</ul>
+				</div>
+
+				<a href="#" class="link cart"><img class="link__img" src="assets/img/CART.svg" alt=""></a>
 				<a href="#" class="link"><img class="link__img" src="assets/img/GLASS.svg" alt="">
 				</a>
 			</div>
 
-			<div class="intro dflex">
+			<div class="intro">
 				<p class="intro__text">Creative Template</p>
-				<h1 class="intro__title">Welcome to MoGo</h1>
+				<h1 class="intro__title">Welcome <br>to MoGo</h1>
 				<a href="#" class="intro__btn">Learn more</a>
 			</div>
 
-			<div class="slider dflex">
-				<div class="slider__item active">
+			<div class="slider">
+				<a href="#" class="slider__item active">
 					<span class="slider__number">01</span>
 					Intro
-				</div>
-				<div class="slider__item">
+				</a>
+				<a href="#" class="slider__item">
 					<span class="slider__number">02</span>
 					Work
-				</div>
-				<div class="slider__item">
+				</a>
+				<a href="#" class="slider__item">
 					<span class="slider__number">03</span>
 					About
-				</div>
-				<div class="slider__item">
+				</a>
+				<a href="#" class="slider__item">
 					<span class="slider__number">04</span>
 					Contacts
-				</div>
+				</a>
 			</div>
 
 		</div>
 	</header>
-	<main class="main">
+	<!-- <main class="main">
 		<section class="about">
 			<div class="container">
 				<p class="section-suptitle">What we do</p>
 				<h2 class="section-title">Story about us</h2>
-				<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				<p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 					laboris nisi ut aliquip ex ea commodo consequat. </p>
 				<div class="about__card">
 
 					<a href="#" class="item-card one">
-						<span class="dnone"><img src="./assets/img/USERS.svg" alt=""></span>
-						<span class="dnone">super team</span>
-						<span class="dnone bg"></span>
+						<div class="item-card__wrapper">
+							<img class="item-card__img" src="./assets/img/USERS.svg" alt="">
+							<p class="item-card__text">super team</p>
+						</div>
 					</a>
 
 					<a href="#" class="item-card two">
-						<span class="dnone"><img src="./assets/img/USERS.svg" alt=""></span>
-						<span class="dnone">super team</span>
-						<span class="dnone bg"></span>
+						<div class="item-card__wrapper">
+							<img class="item-card__img" src="./assets/img/USERS.svg" alt="">
+							<p class="item-card__text">super team</p>
+						</div>
 					</a>
 
 					<a href="#" class="item-card three">
-						<span class="dnone"><img src="./assets/img/USERS.svg" alt=""></span>
-						<span class="dnone">super team</span>
-						<span class="dnone bg"></span>
+						<div class="item-card__wrapper">
+							<img class="item-card__img" src="./assets/img/USERS.svg" alt="">
+							<p class="item-card__text">super team</p>
+						</div>
 					</a>
 				</div>
 			</div>
@@ -110,13 +129,67 @@
 				</div>
 			</div>
 		</section>
-		<section class="service">
+		<section class="works">
 			<div class="container">
 				<p class="section-suptitle">What we do</p>
-				<h2 class="section-title">Story about us</h2>
+				<h2 class="section-title">some of our work</h2>
+				<p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>
+			<div class="works__work">
+				<a href="#" class="work work-1">
+					<div class="work__wrapper">
+						<img class="work__img" src="./assets/img/PICTURE.svg" alt="">
+						<p class="work__name">creatively designed</p>
+						<p class="work__text">Lorem ipsum dolor sit</p>
+					</div>
+				</a>
+				<a href="#" class="work work-2">
+					<div class="work__wrapper">
+						<img class="work__img" src="./assets/img/PICTURE.svg" alt="">
+						<p class="work__name">creatively designed</p>
+						<p class="work__text">Lorem ipsum dolor sit</p>
+					</div>
+				</a>
+				<a href="#" class="work work-3">
+					<div class="work__wrapper">
+						<img class="work__img" src="./assets/img/PICTURE.svg" alt="">
+						<p class="work__name">creatively designed</p>
+						<p class="work__text">Lorem ipsum dolor sit</p>
+					</div>
+				</a>
+				<a href="#" class="work work-4">
+					<div class="work__wrapper">
+						<img class="work__img" src="./assets/img/PICTURE.svg" alt="">
+						<p class="work__name">creatively designed</p>
+						<p class="work__text">Lorem ipsum dolor sit</p>
+					</div>
+				</a>
+				<a href="#" class="work work-5">
+					<div class="work__wrapper">
+						<img class="work__img" src="./assets/img/PICTURE.svg" alt="">
+						<p class="work__name">creatively designed</p>
+						<p class="work__text">Lorem ipsum dolor sit</p>
+					</div>
+				</a>
+				<a href="#" class="work work-6">
+					<div class="work__wrapper">
+						<img class="work__img" src="./assets/img/PICTURE.svg" alt="">
+						<p class="work__name">creatively designed</p>
+						<p class="work__text">Lorem ipsum dolor sit</p>
+					</div>
+				</a>
+				<a href="#" class="work work-7">
+					<div class="work__wrapper">
+						<img class="work__img" src="./assets/img/PICTURE.svg" alt="">
+						<p class="work__name">creatively designed</p>
+						<p class="work__text">Lorem ipsum dolor sit</p>
+					</div>
+				</a>
 			</div>
 		</section>
-	</main>
+	</main> -->
 </body>
 
 </html>
