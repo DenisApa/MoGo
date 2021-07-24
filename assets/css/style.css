@@ -481,6 +481,9 @@ body {
   .about .item-card.one {
     grid-column: auto;
   }
+  .about .item-card__wrapper {
+    height: 100%;
+  }
 }
 
 .facts {

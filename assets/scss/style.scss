@@ -142,6 +142,9 @@ body {
 			&.one {
 				grid-column: auto;
 			}
+			&__wrapper {
+				height: 100%;
+			}
 		}
 	}
 }
