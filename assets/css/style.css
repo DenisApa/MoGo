@@ -425,7 +425,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
   background: linear-gradient(90deg, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
   width: 100%;
-  height: 100%;
+  height: 90%;
   -webkit-transition: ease .3s;
   transition: ease .3s;
   opacity: 0;
