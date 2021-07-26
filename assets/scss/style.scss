@@ -350,5 +350,8 @@ body {
 		::-webkit-input-placeholder {
 			color: rebeccapurple;
 		}
+		input {
+			outline: none;
+		}
 	}
 }

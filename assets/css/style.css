@@ -744,3 +744,7 @@ body {
 .footer .form ::-webkit-input-placeholder {
   color: rebeccapurple;
 }
+
+.footer .form input {
+  outline: none;
+}
