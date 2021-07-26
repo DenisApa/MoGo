@@ -300,6 +300,7 @@ body {
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 70px;
 	}
 	&__item {
 		// width: 100%;
@@ -348,10 +349,39 @@ body {
 	.form {
 		display: flex;
 		::-webkit-input-placeholder {
-			color: rebeccapurple;
+			color: #e7e7e7;
 		}
-		input {
+		.input-mail {
+			font-family: 'Roboto', sans-serif;
+			font-size: 15px;
+			font-style: italic;
+			color: #999999;
+			padding: 15px 10px;
 			outline: none;
+			border: 2px solid #e7e7e7;
+			width: 100%;
+			max-width: 230px;
+		}
+		.input-btn {
+			font-size: 14px;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 700;
+			outline: none;
+			border: none;
+			background: #95e1d3;
+			padding: 10px 2em;
+			cursor: pointer;
+		}
+	}
+	&__bottom {
+		font-size: 14px;
+		font-weight: 600;
+		text-align: center;
+		padding: 25px 0;
+		border-top: 2px solid #e5e5e5;
+		a {
+			color: #f08b8b;
 		}
 	}
 }

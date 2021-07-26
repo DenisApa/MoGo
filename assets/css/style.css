@@ -678,6 +678,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .footer__item {
@@ -742,9 +743,41 @@ body {
 }
 
 .footer .form ::-webkit-input-placeholder {
-  color: rebeccapurple;
+  color: #e7e7e7;
 }
 
-.footer .form input {
+.footer .form .input-mail {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #999999;
+  padding: 15px 10px;
   outline: none;
+  border: 2px solid #e7e7e7;
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer .form .input-btn {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background: #95e1d3;
+  padding: 10px 2em;
+  cursor: pointer;
+}
+
+.footer__bottom {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 25px 0;
+  border-top: 2px solid #e5e5e5;
+}
+
+.footer__bottom a {
+  color: #f08b8b;
 }
