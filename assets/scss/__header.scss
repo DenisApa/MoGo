@@ -155,6 +155,7 @@ $color_2: #fce38a;
 @media  screen and (max-width: 768px) {
 	.header {
 		min-height: 800px;
+		padding-bottom: 10px;
 	}
 	.navigation {
 		padding-right: 50px;
@@ -214,7 +215,7 @@ $color_2: #fce38a;
 		border: 3px solid #fff;
 
 		padding: 15px 3em;
-		transition: ease .5s;
+		transition: background ease .5s, color ease .5s;
 		&:hover {
 			background: #fff;
 			color: #fce38a;
