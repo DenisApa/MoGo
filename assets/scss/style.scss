@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@0,400;1,300&display=swap');
 
 @import "__header.scss";
 
@@ -60,7 +60,9 @@ body {
 	}
 }
 
-.section__text {
+.text {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
 	color: #999999;
 	font-size: 15px;
 	line-height: 24px;
@@ -166,7 +168,6 @@ body {
 	&__wrapper {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
-		// grid-template-rows: minmax(270px, 1fr);
 		column-gap: 1px;
 	}
 	&__item {
@@ -225,6 +226,83 @@ body {
 .service {
 	text-align: center;
 	padding: 100px 0;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(225px, 1fr));
+		row-gap: 2px;
+		background: #e5e5e5;
+	}
+	&__item {
+		text-align: left;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		background: #fff;
+		min-height: 125px;
+		padding: 30px 25px;
+		position: relative;
+		.text {
+			margin-left: 70px;
+			margin-bottom: 0;
+		}
+	}
+	&__title {
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-left: 70px;
+		margin-bottom: 20px;
+	}
+	&__img {
+		position: absolute;
+		top: 32px;
+		left: 25px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.service {
+		&__wrapper {
+			grid-template-columns: repeat(2, minmax(225px, 1fr));
+		}
+		&__item {
+			padding: 30px 10px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.service {
+		&__wrapper {
+			grid-template-columns: minmax(225px, 1fr);
+		}
+	}
+}
+
+.devices {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// text-align: center;
+	min-height: 850px;
+	background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/Layer\ 45.jpg') center/cover no-repeat;
+	padding-top: 100px;
+	
+	&__img {
+		margin-top: auto;
+		position: relative;
+	}
+	img {
+		width: 100%;
+		max-width: 570px;
+		height: auto;
+	}
+	.absolute {
+		max-width: 274px;
+		position: absolute;
+		bottom: -75px;
+		right: -110px;
+	}
 }
 
 .works {

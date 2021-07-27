@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@0,400;1,300&display=swap");
 .header {
   height: 100vh;
   min-height: 1000px;
@@ -370,7 +370,9 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.section__text {
+.text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
   color: #999999;
   font-size: 15px;
   line-height: 24px;
@@ -568,6 +570,104 @@ body {
 .service {
   text-align: center;
   padding: 100px 0;
+}
+
+.service__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(225px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(225px, 1fr));
+  row-gap: 2px;
+  background: #e5e5e5;
+}
+
+.service__item {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  min-height: 125px;
+  padding: 30px 25px;
+  position: relative;
+}
+
+.service__item .text {
+  margin-left: 70px;
+  margin-bottom: 0;
+}
+
+.service__title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.service__img {
+  position: absolute;
+  top: 32px;
+  left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .service__wrapper {
+    -ms-grid-columns: (minmax(225px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(225px, 1fr));
+  }
+  .service__item {
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .service__wrapper {
+    -ms-grid-columns: minmax(225px, 1fr);
+        grid-template-columns: minmax(225px, 1fr);
+  }
+}
+
+.devices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 850px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url("../img/Layer 45.jpg") center/cover no-repeat;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/Layer 45.jpg") center/cover no-repeat;
+  padding-top: 100px;
+}
+
+.devices__img {
+  margin-top: auto;
+  position: relative;
+}
+
+.devices img {
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+}
+
+.devices .absolute {
+  max-width: 274px;
+  position: absolute;
+  bottom: -75px;
+  right: -110px;
 }
 
 .works {
