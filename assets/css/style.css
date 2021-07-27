@@ -724,6 +724,112 @@ body {
   }
 }
 
+.quote {
+  background: #f8f8f8;
+  padding: 70px 0;
+}
+
+.quote__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 290px;
+}
+
+.quote__slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  margin: 0 40px;
+}
+
+.quote__img {
+  max-width: 150px;
+  height: 150px;
+  margin-right: 50px;
+}
+
+.quote__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quote__name {
+  color: #000;
+  font-family: 'Kaushan Script', cursive;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quote__name::before {
+  content: "";
+  display: inline-block;
+  background: #f08b8b;
+  width: 60px;
+  height: 3px;
+  margin-right: 15px;
+}
+
+.quote .arrow {
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .quote__slider-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .quote__img {
+    max-width: 125px;
+    height: 125px;
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quote__img {
+    max-width: 100px;
+    height: 100px;
+  }
+  .quote__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.team {
+  text-align: center;
+  padding: 100px 0;
+}
+
 .works {
   text-align: center;
 }
