@@ -1323,7 +1323,7 @@ body {
   padding: 9px 2em;
   border: 2px solid #e7e7e7;
   cursor: pointer;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .footer__item--inst {
