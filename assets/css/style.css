@@ -346,11 +346,13 @@ body {
   font-size: 24px;
   font-family: 'Kaushan Script', cursive;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .section-title {
   font-size: 30px;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 40px;
   padding-bottom: 35px;
   position: relative;
@@ -376,6 +378,7 @@ body {
   color: #999999;
   font-size: 15px;
   line-height: 24px;
+  text-align: center;
   margin-bottom: 100px;
 }
 
@@ -1073,7 +1076,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .works__work {
     -ms-grid-columns: (minmax(150px, 1fr))[2];
         grid-template-columns: repeat(2, minmax(150px, 1fr));
@@ -1105,6 +1108,87 @@ body {
 
 .quote-2 {
   background: #fff;
+}
+
+.clients {
+  min-height: 830px;
+  padding: 100px 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url("../img/Layer53.jpg") center/cover no-repeat;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/Layer53.jpg") center/cover no-repeat;
+}
+
+.clients__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.clients .section-title {
+  margin-bottom: 80px;
+}
+
+.clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 170px;
+}
+
+.clients__item img {
+  width: 100%;
+  max-width: 110px;
+  height: 110px;
+  margin-right: 30px;
+}
+
+.clients__item--name {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.clients__item--position {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.clients__item--position::after {
+  content: "";
+  display: block;
+  background: #f08b8b;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.clients .text {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .clients__wrapper {
+    -ms-grid-columns: minmax(250px, 1fr);
+        grid-template-columns: minmax(250px, 1fr);
+    gap: 30px;
+  }
+  .clients__item {
+    min-height: 130px;
+  }
+  .clients__item img {
+    margin-right: 20px;
+  }
 }
 
 .map {
@@ -1173,13 +1257,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 40px;
 }
 
 .footer__item {
   max-width: calc((1230px - 60px) / 2);
   min-height: 360px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .footer__one {
@@ -1337,6 +1420,13 @@ body {
   max-width: 270px;
 }
 
+.footer__item--inst .inst-link {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+}
+
 .footer .inst-wrapper {
   display: -ms-grid;
   display: grid;
@@ -1344,7 +1434,7 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  gap: 5px;
+  gap: 13px;
   margin-bottom: 15px;
 }
 
@@ -1356,7 +1446,7 @@ body {
   border-top: 2px solid #e5e5e5;
 }
 
-.footer__bottom a {
+.footer__bottom .red {
   color: #f08b8b;
 }
 
@@ -1364,6 +1454,9 @@ body {
   .footer__wrapper {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer__one {
     max-width: 100%;
@@ -1371,10 +1464,11 @@ body {
   .footer__item--blogs {
     max-width: 48%;
     min-width: 350px;
+    margin-right: 40px;
   }
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 700px) {
   .footer__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1383,8 +1477,10 @@ body {
     max-width: 100%;
   }
   .footer__item--blogs {
+    width: 100%;
     max-width: 100%;
-    min-width: 300px;
+    min-width: 290px;
+    margin-right: 0;
   }
   .footer__item--inst {
     max-width: 100%;
